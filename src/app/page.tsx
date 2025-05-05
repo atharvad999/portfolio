@@ -74,23 +74,24 @@ export default function Home() {
               Atharva Deshpande
             </h1>
             <div className="mb-8">
-              <motion.div
-                initial={{ scale: 0.5, opacity: 0 }}
-                animate={{ scale: 1, opacity: 1 }}
-                transition={{ duration: 0.5 }}
-                className="relative w-64 h-64 mx-auto mb-6"
-              >
-                <Image
-                  src="/profile_2.jpg"
-                  alt="Atharva Deshpande"
-                  fill
-                  className="rounded-2xl object-cover border-4 border-white dark:border-gray-800 shadow-xl"
-                  priority
-                  onError={(e) => {
-                    e.currentTarget.src = "https://via.placeholder.com/200x200.png?text=AD";
-                  }}
-                />
-              </motion.div>
+            <motion.div
+              initial={{ scale: 0.5, opacity: 0 }}
+              animate={{ scale: 1, opacity: 1 }}
+              transition={{ duration: 0.5 }}
+              className="relative w-64 h-64 md:w-80 md:h-80 lg:w-96 lg:h-96 mx-auto mb-6"
+            >
+           <Image
+              src="/IMG_0127.jpeg"
+              alt="Atharva Deshpande"
+              fill
+              sizes="(max-width: 768px) 256px, (max-width: 1200px) 320px, 384px"
+              className="rounded-2xl object-cover border-4 border-white dark:border-gray-800 shadow-xl"
+              priority
+              onError={(e) => {
+              e.currentTarget.src = "https://via.placeholder.com/200x200.png?text=AD";
+                }}
+              />
+            </motion.div>
             </div>
             <p className="text-xl md:text-2xl text-gray-600 dark:text-gray-300 mb-8">
               Generative AI | Musician | Building tools at the intersection of creativity and automation
@@ -129,6 +130,7 @@ export default function Home() {
             From AI-powered marketing tools to scraping engines and visual content generators, 
             I love shipping things that work and solve real-world problems. My expertise lies in 
             developing AI solutions that bridge the gap between complex technology and practical applications.
+            I believe in launching fast, learning fast, and refining with purpose.
           </motion.p>
         </div>
       </section>
