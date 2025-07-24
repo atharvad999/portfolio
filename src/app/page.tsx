@@ -253,7 +253,7 @@ export default function Home() {
               className="inline-block"
             >
               <a
-                href="/Resume_01.pdf"
+                href="/Resume.pdf"
                 download
                 className="inline-flex items-center px-8 py-4 bg-gradient-to-r from-blue-600 to-purple-600 text-white rounded-xl hover:shadow-lg transition-all"
               >
